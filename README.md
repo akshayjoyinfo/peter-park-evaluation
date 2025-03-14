@@ -1,6 +1,8 @@
 # peter-park-evaluation
 peter-park-evaluation Akshay Joy
 
+
+Used textract and rekognition both are provied from AWS itself 
 ApiGateWay : 
 
 https://e7sfkuy3sf.execute-api.eu-west-1.amazonaws.com/prod/extract
