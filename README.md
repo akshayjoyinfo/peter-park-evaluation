@@ -6,6 +6,139 @@ ApiGateWay :
 https://e7sfkuy3sf.execute-api.eu-west-1.amazonaws.com/prod/extract
 
 
+Sample Response 
+	
+	{
+		"TextractResults": [
+			{
+				"DetectedText": "Jane Doe",
+				"Confidence": 99.96761322021484
+			},
+			{
+				"DetectedText": "123 Main Street",
+				"Confidence": 99.96431732177734
+			},
+			{
+				"DetectedText": "Besttown, CA 12345",
+				"Confidence": 99.47039794921875
+			},
+			{
+				"DetectedText": "(123) 456-7890",
+				"Confidence": 99.92362976074219
+			},
+			{
+				"DetectedText": "jane.doe@email.com",
+				"Confidence": 99.0911636352539
+			},
+			{
+				"DetectedText": "Product Manager",
+				"Confidence": 99.96443176269531
+			},
+			{
+				"DetectedText": "Acme Corporation",
+				"Confidence": 99.87186431884766
+			}
+		],
+		"RekognitionResults": [
+			{
+				"DetectedText": "Jane Doe",
+				"Confidence": 100.0
+			},
+			{
+				"DetectedText": "123 Main Street",
+				"Confidence": 99.98265838623047
+			},
+			{
+				"DetectedText": "Besttown, CA 12345",
+				"Confidence": 99.21943664550781
+			},
+			{
+				"DetectedText": "(123) 456-7890",
+				"Confidence": 99.63928985595703
+			},
+			{
+				"DetectedText": "jane. doe@email.c com",
+				"Confidence": 84.80862426757812
+			},
+			{
+				"DetectedText": "Product Manager",
+				"Confidence": 99.9969711303711
+			},
+			{
+				"DetectedText": "Acme Corporation",
+				"Confidence": 98.94380950927734
+			},
+			{
+				"DetectedText": "Jane",
+				"Confidence": 100.0
+			},
+			{
+				"DetectedText": "Doe",
+				"Confidence": 100.0
+			},
+			{
+				"DetectedText": "123",
+				"Confidence": 100.0
+			},
+			{
+				"DetectedText": "Main",
+				"Confidence": 100.0
+			},
+			{
+				"DetectedText": "Street",
+				"Confidence": 99.9479751586914
+			},
+			{
+				"DetectedText": "Besttown,",
+				"Confidence": 99.45365142822266
+			},
+			{
+				"DetectedText": "CA",
+				"Confidence": 98.23052215576172
+			},
+			{
+				"DetectedText": "12345",
+				"Confidence": 99.97413635253906
+			},
+			{
+				"DetectedText": "(123)",
+				"Confidence": 99.97366333007812
+			},
+			{
+				"DetectedText": "456-7890",
+				"Confidence": 99.30492401123047
+			},
+			{
+				"DetectedText": "jane.",
+				"Confidence": 97.78221130371094
+			},
+			{
+				"DetectedText": "doe@email.c",
+				"Confidence": 59.455116271972656
+			},
+			{
+				"DetectedText": "com",
+				"Confidence": 97.18854522705078
+			},
+			{
+				"DetectedText": "Product",
+				"Confidence": 100.0
+			},
+			{
+				"DetectedText": "Manager",
+				"Confidence": 99.99393463134766
+			},
+			{
+				"DetectedText": "Acme",
+				"Confidence": 98.337646484375
+			},
+			{
+				"DetectedText": "Corporation",
+				"Confidence": 99.54998779296875
+			}
+		]
+	}
+
 
 curl --request POST \
   --url https://e7sfkuy3sf.execute-api.eu-west-1.amazonaws.com/prod/extract \
